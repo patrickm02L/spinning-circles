@@ -1,0 +1,41 @@
+@keyframes clockwiseRotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+@keyframes counterClockwiseRotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-360deg)
+    }
+}
+i{
+    animation: counterClockwiseRotate 25s linear infinite
+}
+.circle1{
+    border: 3px dashed black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 30%;
+    top: 100px;
+    border-radius: 50%;
+    animation: clockwiseRotate 10s linear infinite;
+}
+.circle2{
+    border: 1px dashed black;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 40.3%;
+    top: 30px;
+    border-radius: 50%;
+    animation: clockwiseRotate 25s linear infinite;
+}
